@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from antropy import sample_entropy
 import pywt
 
-# Define the paths to the CSV files
+#paths to the CSV files
 original_file_paths = {
     # Original datasets with channel swapping
     'baseline': [
@@ -115,10 +115,10 @@ ch_names = [
 
 sfreq = 512  # Sampling frequency
 
-# Create the MNE Info object
+
 info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types='eeg')
 
-# Initialize lists to store all epochs and event IDs
+#lists to store all epochs and event IDs
 baseline_epochs = []
 baseline_event_ids = []
 
